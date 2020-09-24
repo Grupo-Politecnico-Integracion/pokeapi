@@ -10,6 +10,7 @@ import { CuerpoComponent } from './cuerpo/cuerpo.component';
   declarations: [
     AppComponent,
     CabeceraComponent,
+    
     CuerpoComponent
   ],
   imports: [
