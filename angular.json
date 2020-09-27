@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pokeapi"
+    }
+  },
+  "defaultProject": "pokeapi",
+  "cli": {
+    "analytics": "80a9fa61-a6a8-4014-a5b2-7a706b5020c1"
+  }
 }
