@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Pokemon } from '../Modelos/pokemon';
 
@@ -6,10 +7,12 @@ import { Pokemon } from '../Modelos/pokemon';
 })
 export class FotoService {
 
-  pokemon: Pokemon = new Pokemon
+  pokemon: Pokemon = new Pokemon();
 
-  constructor() { 
-    this.pokemon.name = "Primer poke"
-    this.pokemon.url = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/204.png'
+  constructor(private http:HttpClient) { 
+
+    // this.pokemon.results.name = "Primer poke"
+    // this.pokemon.results.name = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/204.png'
+  
   }
 }

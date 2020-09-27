@@ -1,9 +1,5 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FotoService } from '../Servicios/foto.service';
-
-
-
-
 
 @Component({
   selector: 'app-cuerpo',
@@ -13,11 +9,11 @@ import { FotoService } from '../Servicios/foto.service';
 
 export class CuerpoComponent implements OnInit {
 
-  constructor( private fotoService: FotoService ) { }
+  constructor() { }
 
   ngOnInit(): void {
 
-  this.fotoService.pokemon.name = this.fotoService.pokemon.name;
+  // this.fotoService.pokemon.results.name = this.fotoService.pokemon.results.name;
     
   }
 

@@ -2,14 +2,14 @@ import { Resultado } from './resultado';
 
 export class Pokemon{
 
-    name: String;
-    url:String;
+    // name: String;
+    // url:String;
 
 
-    // results: Resultado;
+    results: Resultado;
 
  constructor(){
-    this.name = this.name;
+    //this.results.name = 'cesar';
   }
 
 }

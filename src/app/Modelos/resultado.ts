@@ -1,11 +1,11 @@
 export class Resultado {
-    // name: String;
-    // url:String;
+    name: String;
+    url:String;
 
 
-    // constructor(){
-    //   this.name = this.name;
-    //   this.url = this.url;
+ constructor(){
+//       this.name = this.name;
+//       this.url = this.url;
 
-    // }
-}
+ }
+ }
