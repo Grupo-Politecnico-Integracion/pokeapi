@@ -28,20 +28,14 @@ export class CuerpoComponent implements OnInit {
 
    this.fotoInyectada.leerPokemones().subscribe((pokemonDesdeApi)=>{
     this.pokearray2 = pokemonDesdeApi; 
-    this.datos = this.pokearray2['results'];
 
    })
 
-   
-
-
-    
-  
   }
 
 
   leerarreglo(){
-    //this.pokearray = this.poke.results;
+    return this.datos = this.pokearray2['results'];
     
   }
 
