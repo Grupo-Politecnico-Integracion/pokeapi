@@ -3,6 +3,8 @@ import { FotoService } from '../Servicios/foto.service';
 
 
 
+
+
 @Component({
   selector: 'app-cuerpo',
   templateUrl: './cuerpo.component.html',
@@ -11,11 +13,11 @@ import { FotoService } from '../Servicios/foto.service';
 
 export class CuerpoComponent implements OnInit {
 
-  constructor(private fotoService: FotoService) { }
+  constructor( private fotoService: FotoService ) { }
 
   ngOnInit(): void {
 
-  //  this.fotoService.pokemon.results.name = this.fotoService.pokemon.results.name;
+  this.fotoService.pokemon.name = this.fotoService.pokemon.name;
     
   }
 
