@@ -3,9 +3,4 @@ export class Resultado {
     url:String;
 
 
- constructor(){
-//       this.name = this.name;
-//       this.url = this.url;
-
- }
  }
