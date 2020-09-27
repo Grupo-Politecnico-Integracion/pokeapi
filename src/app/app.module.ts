@@ -19,9 +19,7 @@ import { FotoService } from './Servicios/foto.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
-    FotoService
-  ],
+  providers: [FotoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
