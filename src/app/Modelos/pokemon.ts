@@ -10,8 +10,5 @@ export class Pokemon{
     previous: string;
     results: Resultado;
 
- constructor(){
-    //this.results.name = 'cesar';
-  }
 
 }
