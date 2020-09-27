@@ -1,9 +1,9 @@
 #input_buscador{
-	width: 30%;
+	width: 100%;
 	height: 100%;
 	font-size: 20px;
 	border-radius: 20px;
-	border: 2px solid yellow;
+	border: 3px solid #1976d2;
 }
 
 #input_buscador:focus{
@@ -12,7 +12,7 @@
 	-o-animation: glow 800ms ease-out infinite alternate;
 	-ms-animation: glow 800ms ease-out infinite alternate;
 	animation: glow 800ms ease-out infinite alternate;
-	border-color: gradient white;
+	border-color: gradient blue;
 	box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 green;
 	outline: none;
 }
@@ -20,10 +20,3 @@
 #input_buscador:focus::-webkit-input-placeholder{
 	color: black;
 }
-
-#input_buscador:focus:-moz-placeholder{
-	color: blue celeste;
-}
-
-
-
