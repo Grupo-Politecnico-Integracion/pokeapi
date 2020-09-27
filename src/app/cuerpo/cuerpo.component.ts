@@ -1,5 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Pokemon } from '../Modelos/pokemon';
+import { FotoService } from '../Servicios/foto.service';
 
 @Component({
   selector: 'app-cuerpo',
@@ -9,11 +10,16 @@ import { Component, OnInit } from '@angular/core';
 
 export class CuerpoComponent implements OnInit {
 
-  constructor() { }
+  poke: Pokemon = new Pokemon();
+
+  constructor(private fotoInyectada: FotoService) { }
 
   ngOnInit(): void {
 
-  // this.fotoService.pokemon.results.name = this.fotoService.pokemon.results.name;
+   this.fotoInyectada.leerPokemones().subscribe((pokemonDesdeApi)=>{
+    this.poke = pokemonDesdeApi; 
+   })
+  
     
   }
 
