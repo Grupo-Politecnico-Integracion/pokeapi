@@ -8,11 +8,11 @@ import { FotoService } from '../Servicios/foto.service';
 })
 export class CuerpoComponent implements OnInit {
 
-  constructor( public FotoInyectado:FotoService ) { }
+  constructor(private FotoInyectada:FotoService) { }
 
   ngOnInit(): void {
 
-    this.FotoInyectado.pokemon.results.name = this.FotoInyectado.pokemon.results.name;
+   
   }
 
 }
