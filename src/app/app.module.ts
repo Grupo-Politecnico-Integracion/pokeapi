@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { CuerpoComponent } from './cuerpo/cuerpo.component';
 import { PieComponent } from './pie/pie.component';
+import { FotoService } from './Servicios/foto.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { PieComponent } from './pie/pie.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    FotoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
