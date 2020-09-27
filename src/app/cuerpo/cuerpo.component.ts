@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FotoService } from './../Servicios/foto.service';
+import { FotoService } from '../Servicios/foto.service';
+
 
 
 @Component({
@@ -14,8 +15,7 @@ export class CuerpoComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // console.log(this.Fot.pokemon.results.name);
-    // this.Fot.pokemon.results.name = this.Fot.pokemon.results.name;
+  //  this.fotoService.pokemon.results.name = this.fotoService.pokemon.results.name;
     
   }
 

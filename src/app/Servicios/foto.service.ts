@@ -9,7 +9,7 @@ export class FotoService {
   pokemon: Pokemon = new Pokemon
 
   constructor() { 
-    this.pokemon.results.name = 'Primer poke'
-    this.pokemon.results.url = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/204.png'
+    this.pokemon.name = "Primer poke"
+    this.pokemon.url = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/204.png'
   }
 }

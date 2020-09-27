@@ -2,10 +2,14 @@ import { Resultado } from './resultado';
 
 export class Pokemon{
 
-    results: Resultado;
+    name: String;
+    url:String;
 
-    constructor(){
-        this.results = this.results;
-    }
+
+    // results: Resultado;
+
+ constructor(){
+    this.name = this.name;
+  }
 
 }
