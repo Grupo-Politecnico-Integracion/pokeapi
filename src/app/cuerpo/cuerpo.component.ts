@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pokemon } from '../Modelos/pokemon';
+import { Resultado } from '../Modelos/resultado';
 import { FotoService } from '../Servicios/foto.service';
 
 @Component({
@@ -12,6 +13,8 @@ export class CuerpoComponent implements OnInit {
 
   poke: Pokemon = new Pokemon();
 
+  pokearray: Array<Resultado> = new Array<Resultado>();
+
   constructor(private fotoInyectada: FotoService) { }
 
   ngOnInit(): void {
@@ -20,6 +23,12 @@ export class CuerpoComponent implements OnInit {
     this.poke = pokemonDesdeApi; 
    })
   
+  
+  }
+
+
+  leerarreglo(){
+
     
   }
 
