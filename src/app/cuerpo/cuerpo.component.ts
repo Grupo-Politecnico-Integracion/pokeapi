@@ -32,16 +32,13 @@ export class CuerpoComponent implements OnInit {
 
    })
 
+   this.datos = this.pokearray2['results'];
    
-
-
-    
-  
   }
 
 
   leerarreglo(){
-    //this.pokearray = this.poke.results;
+    return this.datos = this.pokearray2['results'];
     
   }
 
