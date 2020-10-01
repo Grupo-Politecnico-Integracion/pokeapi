@@ -7,7 +7,8 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { CuerpoComponent } from './cuerpo/cuerpo.component';
 import { PieComponent } from './pie/pie.component';
 import { FotoService } from './Servicios/foto.service';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { CuerpointernoComponent } from './cuerpointerno/cuerpointerno.component'
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http'
     AppComponent,
     CabeceraComponent,
     CuerpoComponent,
-    PieComponent
+    PieComponent,
+    CuerpointernoComponent
   ],
   imports: [
     BrowserModule,
