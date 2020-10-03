@@ -1,9 +1,9 @@
     
     <div class="container cont">
         <div class="row">
-                  <div class="col-4" *ngFor="let p of datos">
+                  <div class="col-4" *ngFor="let p of datos3">
                       <a class="boton-imagen" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
-                          <img class="img-thumbnail img" alt="" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"/>
+                          <img class="img-thumbnail img" alt="" src="./assets/imagenes/img/{{p.Id}}.png"/>
                       </a>
                       <div class='text-left'>
                           <h4 class='nombre'>{{p.name}}</h4>
