@@ -21,16 +21,16 @@ export class FotoService {
   leerPokemones(): Observable<Pokemon[]>
   {
 
-    return this.http.get<Pokemon[]>('https://pokeapi.co/api/v2/pokemon?limit=100&offset=200')
+    return this.http.get<Pokemon[]>('https://pokeapi.co/api/v2/pokemon?limit=30&offset=0')
   }
 
 
 
-  leerruta(enlace: string): Observable<Resultado>
-  {
+  // leerruta(enlace: string): Observable<Resultado>
+  // {
 
-    return this.http.get<Resultado>(enlace)
-  }
+  //   return this.http.get<Resultado>(enlace)
+  // }
 
 
   

@@ -11,8 +11,8 @@ import { FotoService } from '../Servicios/foto.service';
 
 export class CuerpoComponent implements OnInit {
 
-  // poke: Pokemon = new Pokemon();
-  poke: Resultado = new Resultado();
+  poke: Pokemon = new Pokemon();
+  // poke: Resultado = new Resultado();
 
   pokearray: Resultado = new Resultado();
   pokearray2: Array<Pokemon> = new Array<Pokemon>();
@@ -28,7 +28,7 @@ export class CuerpoComponent implements OnInit {
 
    this.fotoInyectada.leerPokemones().subscribe((pokemonDesdeApi)=>{
     this.pokearray2 = pokemonDesdeApi; 
-    this.datos = this.pokearray2['results'];
+    // this.datos = this.pokearray2['results'];
 
    })
 
@@ -37,9 +37,9 @@ export class CuerpoComponent implements OnInit {
   }
 
 
-  leerarreglo(){
-    return this.datos = this.pokearray2['results'];
+  // leerarreglo(){
+  //   return this.datos = this.pokearray2['results'];
     
-  }
+  // }
 
 }
