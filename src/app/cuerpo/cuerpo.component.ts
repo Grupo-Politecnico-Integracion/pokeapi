@@ -27,19 +27,16 @@ export class CuerpoComponent implements OnInit {
   ngOnInit(): void {
 
    this.fotoInyectada.leerPokemones().subscribe((pokemonDesdeApi)=>{
-    this.pokearray2 = pokemonDesdeApi; 
-    // this.datos = this.pokearray2['results'];
-
+    this.pokearray2 = pokemonDesdeApi;  
+    this.datos = this.pokearray2['results'];
    })
 
-   this.datos = this.pokearray2['results'];
-   
   }
 
 
-  // leerarreglo(){
-  //   return this.datos = this.pokearray2['results'];
+  leerarreglo(){
+  return this.datos = this.pokearray2['results'];
     
-  // }
+ }
 
 }
