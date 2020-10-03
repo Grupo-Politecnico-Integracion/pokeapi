@@ -11,14 +11,16 @@ import { FotoService } from '../Servicios/foto.service';
 
 export class CuerpoComponent implements OnInit {
 
-  // poke: Pokemon = new Pokemon();
-  poke: Resultado = new Resultado();
+  poke: Pokemon = new Pokemon();
+  // poke: Resultado = new Resultado();
 
   pokearray: Resultado = new Resultado();
   pokearray2: Array<Pokemon> = new Array<Pokemon>();
   pokearray3: Array<Resultado> = new Array<Resultado>();
 
   datos: any[] = []
+  datos2: any[] = []
+  datos3: any[] = []
 
   nombre: String;
 
@@ -27,16 +29,35 @@ export class CuerpoComponent implements OnInit {
   ngOnInit(): void {
 
    this.fotoInyectada.leerPokemones().subscribe((pokemonDesdeApi)=>{
-    this.pokearray2 = pokemonDesdeApi; 
-
+    this.pokearray2 = pokemonDesdeApi;  
+    this.datos = this.pokearray2['results'];
+    this.datos3 = this.arregloId();
    })
 
   }
 
 
-  leerarreglo(){
-    return this.datos = this.pokearray2['results'];
+  arregloId(){
+
+  var idfoto: number = 0;
+
+  this.datos.forEach( valores =>{
+
+     idfoto++;
+
+    this.datos2.push({
+
+      name: valores.name,
+      url: valores.url,
+      Id: idfoto
+
+
+    })
+
+
+  })
+  return this.datos2
     
-  }
+ }
 
 }
