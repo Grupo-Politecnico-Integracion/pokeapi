@@ -1,31 +1,19 @@
     
-    <div class="container cont" >
-      <div class="row"  >
-            
-        <div class="col-4" *ngFor="let p of datos">
-            
-        
-                <a class="boton-imagen"
-                    href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
-                    <img class="img-thumbnail img" alt=""
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" />
-                </a>
-                <div class='text-left'>
-                    <h4 class='nombre'>{{p.name}}</h4>
-                </div>
-
-                <!--<div >
-                    <img class="img-thumbnail img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" />
-                    <h4 class="letra">{{p.name}}</h4>
-                </div>-->
-
-
-            
+    <div class="container cont">
+        <div class="row">
+                  <div class="col-4" *ngFor="let p of datos">
+                      <a class="boton-imagen" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
+                          <img class="img-thumbnail img" alt="" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"/>
+                      </a>
+                      <div class='text-left'>
+                          <h4 class='nombre'>{{p.name}}</h4>
+                      </div>
+                  </div>
         </div>
-
-        
       </div>
-
-    </div>
+    
+    
+    
+    
 
  
