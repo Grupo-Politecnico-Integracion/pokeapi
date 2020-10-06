@@ -66,7 +66,7 @@ export class CuerpoComponent implements OnInit {
 
  irAEspecificacion(p:any[]){
 
-  this.datos4 = p;
+  this.fotoInyectada.datos2 = p;
   this.Ruta.navigateByUrl('/especificacion');
 
  }
