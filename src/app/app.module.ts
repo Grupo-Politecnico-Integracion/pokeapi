@@ -8,7 +8,7 @@ import { CuerpoComponent } from './cuerpo/cuerpo.component';
 import { PieComponent } from './pie/pie.component';
 import { FotoService } from './Servicios/foto.service';
 import { HttpClientModule } from '@angular/common/http';
-import { CuerpointernoComponent } from './cuerpointerno/cuerpointerno.component'
+import { EspecificacionComponent } from './especificacion/especificacion.component'
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { CuerpointernoComponent } from './cuerpointerno/cuerpointerno.component'
     CabeceraComponent,
     CuerpoComponent,
     PieComponent,
-    CuerpointernoComponent
+    EspecificacionComponent
   ],
   imports: [
     BrowserModule,
