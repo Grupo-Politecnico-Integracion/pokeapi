@@ -6,9 +6,10 @@
 .img{
     width: 90%;
     margin-top: 1%;
-    border: 10px solid transparent;
+    border: 3px solid transparent;
     //border-image: linear-gradient(to right, yellow, blue) 1;
-    border-image: url('https://media.giphy.com/media/ullzX0uop0xTq/giphy.gif') 10 round;
+    //border-image: url('https://media.giphy.com/media/ullzX0uop0xTq/giphy.gif') 10 round;
+    border-image: url('https://media4.giphy.com/media/3kPEbCPZ8jFEoYQsNS/giphy.gif?cid=bb5a1c3a0l7bh3j7btrz7cxsf8xombgv2cojnxe7v2sayiu0&rid=giphy.gif') 10 round;
     border-radius: 10px;
     margin-bottom: 5%;
 }
@@ -17,4 +18,14 @@
     font-weight: bold;
     color: black;
     text-align: center;
+}
+
+
+.margen{
+    margin-top: 50px;
+    
+}
+
+b{
+    color: #627bc5;
 }
