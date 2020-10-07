@@ -9,7 +9,7 @@ import { FotoService } from '../Servicios/foto.service';
 })
 export class CabeceraComponent implements OnInit {
 
-  frase: string = '';
+  frase: string = ''
 
   constructor(private fotoInyectada: FotoService, private Ruta: Router) { 
 
@@ -25,7 +25,7 @@ export class CabeceraComponent implements OnInit {
 
    
 
-   this.fotoInyectada.a = this.frase;
+  this.fotoInyectada.a = this.frase;
   this.Ruta.navigateByUrl('/busqueda');
 
    

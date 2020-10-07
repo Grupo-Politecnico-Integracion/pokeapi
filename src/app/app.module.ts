@@ -10,7 +10,8 @@ import { FotoService } from './Servicios/foto.service';
 import { HttpClientModule } from '@angular/common/http';
 import { EspecificacionComponent } from './especificacion/especificacion.component';
 import { BusquedaComponent } from './busqueda/busqueda.component'
-import { FormsModule } from '@angular/forms';
+import { FormsModule} from '@angular/forms'
+
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule 
+    
   ],
   providers: [FotoService],
   bootstrap: [AppComponent]
