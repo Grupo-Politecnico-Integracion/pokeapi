@@ -26,7 +26,7 @@ export class EspecificacionComponent implements OnInit {
     this.fotoInyectada.leerEspecificacion(this.datos['Id']).subscribe((detalleDesdeApi)=>{
  
        this.detalle = detalleDesdeApi;
-       this.detalle.Id = this.datos['Id'];
+       this.detalle.id = this.datos['Id'];
       this.habilidad = this.detalle.abilities;
 
     
