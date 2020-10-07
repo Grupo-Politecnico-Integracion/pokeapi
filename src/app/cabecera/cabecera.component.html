@@ -2,8 +2,9 @@
 <nav class="nav navbar navbar-expand-lg">
   <div class="container-fluid">
     <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Ingrese una palabra" aria-label="Search">
-        <button class="btn btn-outline-primary btn-rounded my-2 my-sm-0" type="submit">Buscar</button>
+        <input [(ngModel)]="frase" [ngModelOptions]="{standalone: true}" class="form-control mr-sm-2"  placeholder="Ingrese una palabra" >
+        
+        <button class="btn btn-outline-primary btn-rounded my-2 my-sm-0" (click)="buscar()">Buscar</button>
       </form>
       <div class="navbar-right">
         <img src="./../../assets/imagenes/logo.png" class="img-fluid" alt="Responsive image">
