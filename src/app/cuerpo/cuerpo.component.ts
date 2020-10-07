@@ -34,6 +34,8 @@ export class CuerpoComponent implements OnInit {
     this.pokearray2 = pokemonDesdeApi;  
     this.datos = this.pokearray2['results'];
     this.datos3 = this.arregloId();
+
+    //this.datos4 = this.datos3.filter(x => x.name ==  'skrelp');
    })
 
   }
