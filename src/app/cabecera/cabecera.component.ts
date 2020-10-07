@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { FotoService } from '../Servicios/foto.service';
 
 @Component({
   selector: 'app-cabecera',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CabeceraComponent implements OnInit {
 
-  constructor() { }
+  frase: string = ''
+
+  constructor(private fotoInyectada: FotoService, private Ruta: Router) { 
+
+    
+  }
 
   ngOnInit(): void {
+  }
+
+
+
+  buscar(){
+
+   
+
+  this.fotoInyectada.a = this.frase;
+  this.Ruta.navigateByUrl('/busqueda');
+
+   
   }
 
 }

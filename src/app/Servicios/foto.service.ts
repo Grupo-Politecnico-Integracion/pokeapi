@@ -12,6 +12,7 @@ import { Resultado } from '../Modelos/resultado';
 export class FotoService {
 
   datos2: any[] = []
+  a: String
 
   constructor(private http:HttpClient) { 
 
