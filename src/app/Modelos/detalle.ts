@@ -6,6 +6,6 @@ export class Detalle {
     name:String;
     weight: number;
     height: number;
-
+    id:number;
 
  }

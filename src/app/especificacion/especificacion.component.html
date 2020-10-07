@@ -1,15 +1,22 @@
-<p>{{detalle.base_experience}}</p>
-<p>{{detalle.name}}!</p>
-<p>{{detalle.weight}}</p>
-<p>{{detalle.height}}</p>
+<div class="container cont">
+    <div class="container">
+        <h3 class="display-4 nombre">{{detalle.name}}</h3>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img class="img-thumbnail img" alt="" src="./assets/imagenes/img/{{detalle.id}}.png" />
+        </div>
+        <div class="col-4">
+            <h4><b>Base de experiencia: </b>{{detalle.base_experience}}</h4>
+            <h4><b>Altura: </b>{{detalle.height}}</h4>
+            <h4><b>Ancho: </b>{{detalle.weight}}</h4>
+        </div>
+        <div class="col-4">
+            <h4><b>Habilidades</b></h4>
+            <ul *ngFor="let k of habilidad"> 
+                <li><h4>{{k.ability.name}}</h4></li>
+            </ul>
+        </div>
 
-<div class="col-4" *ngFor="let k of habilidad">
-
-<p>{{k.ability.name}}</p>
-
-
+    </div>
 </div>
-
-
-
-
