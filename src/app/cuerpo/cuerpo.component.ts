@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Pokemon } from '../Modelos/pokemon';
 import { Resultado } from '../Modelos/resultado';
 import { FotoService } from '../Servicios/foto.service';
@@ -21,10 +22,11 @@ export class CuerpoComponent implements OnInit {
   datos: any[] = []
   datos2: any[] = []
   datos3: any[] = []
+  datos4: any[] = []
 
   nombre: String;
 
-  constructor(private fotoInyectada: FotoService) { }
+  constructor(private fotoInyectada: FotoService, private Ruta: Router) { }
 
   ngOnInit(): void {
 
@@ -58,6 +60,15 @@ export class CuerpoComponent implements OnInit {
   })
   return this.datos2
     
+ }
+
+
+
+ irAEspecificacion(p:any[]){
+
+  this.fotoInyectada.datos2 = p;
+  this.Ruta.navigateByUrl('/especificacion');
+
  }
 
 }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Detalle } from '../Modelos/detalle';
 import { Pokemon } from '../Modelos/pokemon';
 import { Resultado } from '../Modelos/resultado';
 
@@ -26,11 +27,11 @@ export class FotoService {
 
 
 
-  // leerruta(enlace: string): Observable<Resultado>
-  // {
+  leerEspecificacion(id: number): Observable<Detalle>
+  {
 
-  //   return this.http.get<Resultado>(enlace)
-  // }
+    return this.http.get<Detalle>('https://pokeapi.co/api/v2/pokemon/' + id)
+  }
 
 
   
